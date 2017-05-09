@@ -249,9 +249,6 @@ CONF_VERSION = "1"
 # Delete the the source/object/binary files once a package is built to preserve disk space
 INHERIT += "rm_work"
 
-# Generate build history (installed packages etc.)
-INHERIT += "buildhistory"
-
 # Add Toradex source mirror
 INHERIT += "toradex-mirrors"
 
