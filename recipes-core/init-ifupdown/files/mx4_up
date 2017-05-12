@@ -1,0 +1,56 @@
+#!/bin/bash
+
+function optain_dhcp_lease() {
+	udhcpc -S -n -i $1 -x hostname:`hostname` -p /var/run/udhcpc.$1.pid
+}
+
+function start_dhcp_server() {
+	ip addr add $2 dev $1
+	udhcpd -S /etc/udhcpd-$1.conf
+}
+
+function set_static_fallback() {
+	ip addr add $2 dev $1
+}
+
+source /opt/hm/mx4_env
+
+STATIC_FALLBACK_ETH0=192.168.1.200/24
+STATIC_FALLBACK_ETH1=192.168.2.200/24
+STATIC_FALLBACK_ETH2=192.168.3.200/24
+
+NET_CARRIER=`cat /sys/class/net/$IFACE/carrier`
+# Means no link/cable detected
+if [ $NET_CARRIER -eq 0 ]; then
+	exit 1
+fi
+
+if [ "$BOARD_SYSTEM_TYPE" == "mil" ]; then
+	STATIC_FALLBACK_ETH0=192.168.10.10/24
+	STATIC_FALLBACK_ETH1=192.168.11.10/24
+	STATIC_FALLBACK_ETH2=192.168.12.10/24
+fi
+
+if [ "$IFACE" == "eth0" ]; then
+	STATIC_FALLBACK=$STATIC_FALLBACK_ETH0
+fi
+
+if [ "$IFACE" == "eth1" ]; then
+	STATIC_FALLBACK=$STATIC_FALLBACK_ETH1
+fi
+
+if [ "$IFACE" == "eth2" ]; then
+	STATIC_FALLBACK=$STATIC_FALLBACK_ETH2
+fi
+
+
+optain_dhcp_lease $IFACE
+DHCP_LEASE_AQUIRED=$?
+
+if [ $DHCP_LEASE_AQUIRED -ne 0 ]; then
+	if [ "$BOARD_SYSTEM_TYPE" == "mil" ]; then
+		start_dhcp_server $IFACE $STATIC_FALLBACK
+	else
+		set_static_fallback $IFACE $STATIC_FALLBACK
+	fi
+fi
