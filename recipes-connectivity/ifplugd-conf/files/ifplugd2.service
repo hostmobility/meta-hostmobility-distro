@@ -1,0 +1,9 @@
+[Unit]
+Description=Run ifplugd for automatic eth2 configuration
+
+[Service]
+ExecStart = /usr/sbin/ifplugd -fInM -i eth2
+Restart = always
+
+[Install]
+WantedBy=multi-user.target
