@@ -4,7 +4,7 @@ OpenEmbedded/Yocto Distrobution Layer for Host Mobility products
 This is not yet a distribution layer but it aims to be.
 
 This layer provides following build targets:
- - console-hostmobiltiy-image
+ - console-hostmobility-image
 
 Dependencies
 ============
