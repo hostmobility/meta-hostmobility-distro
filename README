@@ -1,0 +1,36 @@
+OpenEmbedded/Yocto Distrobution Layer for Host Mobility products
+=====================================================================
+
+This is not yet a distribution layer but it aims to be.
+
+This layer provides following build targets:
+ - console-hostmobiltiy-image
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: 1.32
+  revision: HEAD
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+  revision: HEAD
+
+Maintainer
+=======
+
+This layer is maintained by Host Mobility AB.
+
+License
+=======
+
+All metadata is MIT licensed unless otherwise stated. Source code and
+binaries included in tree for individual recipes is under the LICENSE
+stated in each recipe (.bb file) unless otherwise stated.
+
+This README document is Copyright (C) 2017 Host Mobility AB.
+
