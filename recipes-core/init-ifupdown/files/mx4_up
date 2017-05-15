@@ -13,7 +13,7 @@ function set_static_fallback() {
 	ip addr add $2 dev $1
 }
 
-source /opt/hm/mx4_env
+test -e /opt/hm/mx4_env && source /opt/hm/mx4_env
 
 STATIC_FALLBACK_ETH0=192.168.1.200/24
 STATIC_FALLBACK_ETH1=192.168.2.200/24
