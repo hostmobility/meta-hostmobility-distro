@@ -1,5 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
+RDEPENDS_${PN} += "bash"
+
 SRC_URI += "\
 	file://interfaces \
 	file://mx4_down \
