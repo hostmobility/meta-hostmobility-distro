@@ -17,7 +17,6 @@ RDEPENDS_${PN} += "\
     ifplugd-conf-systemd-eth1 \
     ifplugd-conf-systemd-eth2 \
     \
-    usb-rndis-systemd \
     udhcpd-conf \
     ppp \
     ntpdate \
