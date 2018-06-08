@@ -16,7 +16,6 @@ BBLAYERS ?= " \
   ${TOPDIR}/../layers/meta-openembedded/meta-gnome \
   ${TOPDIR}/../layers/meta-openembedded/meta-xfce \
   ${TOPDIR}/../layers/meta-openembedded/meta-initramfs \
-  ${TOPDIR}/../layers/meta-openembedded/meta-systemd \
   ${TOPDIR}/../layers/meta-openembedded/meta-networking \
   ${TOPDIR}/../layers/meta-openembedded/meta-multimedia \
   \
