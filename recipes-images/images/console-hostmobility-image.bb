@@ -13,6 +13,7 @@ ROOTFS_PKGMANAGE_PKGS ?= '${@base_conditional("ONLINE_PACKAGE_MANAGEMENT", "none
 
 IMAGE_INSTALL += " \
     packagegroup-basic \
+    packagegroup-base-extended \
     packagegroup-hostmobility-can \
     packagegroup-hostmobility-net-minimal \
     angstrom-packagegroup-boot \
