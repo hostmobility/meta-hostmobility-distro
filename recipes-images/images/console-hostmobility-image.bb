@@ -2,7 +2,7 @@ SUMMARY = "Image booting to a console"
 
 LICENSE = "MIT"
 
-PV = "V2.6.1"
+PV = "V2.8.4"
 
 IMAGE_PREPROCESS_COMMAND = "rootfs_update_timestamp ;"
 
