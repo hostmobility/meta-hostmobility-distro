@@ -1,4 +1,5 @@
 Host Mobility targets are:
     console-hostmobility-image
+    console-hostmobility-dev-image
 
 You can also run generated qemu images with a command like 'runqemu qemux86'
