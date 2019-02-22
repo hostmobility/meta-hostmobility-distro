@@ -17,7 +17,5 @@ RDEPENDS_${PN} += "\
     gpsd-dev \
     gpsd-gpsctl \
     gpsd-udev \
-    libgps \
-    libgpsd \
     "
 
