@@ -16,6 +16,7 @@ IMAGE_INSTALL += " \
     packagegroup-base-extended \
     packagegroup-hostmobility-can \
     packagegroup-hostmobility-net-minimal \
+    packagegroup-hostmobility-gps \
     angstrom-packagegroup-boot \
     udev-extra-rules \
     ${ROOTFS_PKGMANAGE_PKGS} \
