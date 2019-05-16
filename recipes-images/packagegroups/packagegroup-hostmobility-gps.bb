@@ -13,9 +13,5 @@ ALLOW_EMPTY_${PN} = "1"
 RDEPENDS_${PN} += "\
     gpsd \
     gps-utils \
-    gpsd-conf \
-    gpsd-dev \
-    gpsd-gpsctl \
-    gpsd-udev \
     "
 
