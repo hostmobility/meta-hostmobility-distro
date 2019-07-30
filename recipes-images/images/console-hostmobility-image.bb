@@ -22,6 +22,10 @@ IMAGE_INSTALL += " \
     ${ROOTFS_PKGMANAGE_PKGS} \
 "
 
+IMAGE_INSTALL_tegra3 += " \
+    packagegroup-hostmobility-docker \
+"
+
 
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"

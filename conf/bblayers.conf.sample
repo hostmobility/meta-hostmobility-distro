@@ -36,4 +36,5 @@ BBLAYERS ?= " \
   \
   ${TOPDIR}/../layers/meta-hostmobility-bsp \
   ${TOPDIR}/../layers/meta-hostmobility-distro \
+  ${TOPDIR}/../layers/meta-virtualization \
 "
