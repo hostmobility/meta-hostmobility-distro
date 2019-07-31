@@ -1,0 +1,12 @@
+# short-description: Create SD card image with a boot partition
+# long-description: Creates a partitioned SD card image. Boot files
+# are located in the first vfat partition.
+
+part /boot --source bootimg-partition --ondisk mmcblk --fstype=vfat --label boot --active --align 4 --size 16
+part --ondisk mmcblk --fstype=ext3 --align 4 --size 480k
+part /config --ondisk mmcblk --fstype=vfat --label config --align 4 --size 32
+part / --source rootfs --ondisk mmcblk --fstype=ext3 --label root --align 4
+
+bootloader --ptable msdos
+
+
