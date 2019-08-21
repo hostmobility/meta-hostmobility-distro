@@ -22,7 +22,7 @@ IMAGE_INSTALL += " \
     ${ROOTFS_PKGMANAGE_PKGS} \
 "
 
-IMAGE_INSTALL_tegra3 += " \
+IMAGE_INSTALL_tegra3_mainline += " \
     packagegroup-hostmobility-docker \
 "
 
