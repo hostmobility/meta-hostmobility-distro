@@ -20,6 +20,7 @@ IMAGE_INSTALL += " \
     angstrom-packagegroup-boot \
     udev-extra-rules \
     ${ROOTFS_PKGMANAGE_PKGS} \
+    minicom \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
