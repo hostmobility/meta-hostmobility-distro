@@ -22,8 +22,10 @@ IMAGE_INSTALL += " \
     ${ROOTFS_PKGMANAGE_PKGS} \
 "
 
-IMAGE_INSTALL_tegra3_mainline += " \
+IMAGE_INSTALL_append_tegra3mainline += " \
     packagegroup-hostmobility-docker \
+    libgpiod \
+    ntpdate \
 "
 
 
