@@ -27,6 +27,7 @@ IMAGE_INSTALL_append_tegra3mainline += " \
     packagegroup-hostmobility-docker \
     libgpiod \
     ntpdate \
+    lrzsz \
 "
 
 
