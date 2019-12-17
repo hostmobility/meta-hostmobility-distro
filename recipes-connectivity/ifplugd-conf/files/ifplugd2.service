@@ -1,6 +1,8 @@
 [Unit]
 Description=Run ifplugd for automatic eth2 configuration
 
+After=network.target
+
 [Service]
 ExecStart = /usr/sbin/ifplugd -fInM -i eth2
 Restart = always
