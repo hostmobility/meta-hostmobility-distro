@@ -3,13 +3,13 @@ LICENSE = "MIT"
 
 require console-hostmobility-image.bb
 
-PV = "V2.8.4"
 
 IMAGE_INSTALL += " \
     gdb \
     gdbserver \
     glibc-dbg \
     packagegroup-sdk-target \
+    ethtool \
 "
 export IMAGE_DEVELOPNAME = "console-hostmobility-dev-image"
 
