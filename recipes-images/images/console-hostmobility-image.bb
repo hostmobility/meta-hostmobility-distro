@@ -9,7 +9,7 @@ IMAGE_PREPROCESS_COMMAND = "rootfs_update_timestamp ;"
 IMAGE_LINGUAS = "en-us"
 
 DISTRO_UPDATE_ALTERNATIVES ??= ""
-ROOTFS_PKGMANAGE_PKGS ?= '${@base_conditional("ONLINE_PACKAGE_MANAGEMENT", "none", "", "${ROOTFS_PKGMANAGE} ${DISTRO_UPDATE_ALTERNATIVES}", d)}'
+ROOTFS_PKGMANAGE_PKGS ?= '${@oe.utils.conditional("ONLINE_PACKAGE_MANAGEMENT", "none", "", "${ROOTFS_PKGMANAGE} ${DISTRO_UPDATE_ALTERNATIVES}", d)}'
 
 IMAGE_INSTALL += " \
     packagegroup-basic \
