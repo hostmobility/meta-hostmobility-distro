@@ -1,7 +1,8 @@
 [Unit]
 Description=Run ifplugd for automatic eth0 configuration
 
-After=network.target
+Requires=sys-subsystem-net-devices-eth0.device
+After=sys-subsystem-net-devices-eth0.device
 
 [Service]
 ExecStart = /usr/sbin/ifplugd -fInM -i eth0

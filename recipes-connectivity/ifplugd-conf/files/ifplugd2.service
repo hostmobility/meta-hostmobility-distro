@@ -1,7 +1,8 @@
 [Unit]
 Description=Run ifplugd for automatic eth2 configuration
 
-After=network.target
+Requires=sys-subsystem-net-devices-eth2.device
+After=sys-subsystem-net-devices-eth2.device
 
 [Service]
 ExecStart = /usr/sbin/ifplugd -fInM -i eth2
