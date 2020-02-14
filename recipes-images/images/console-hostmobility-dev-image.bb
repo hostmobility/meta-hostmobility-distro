@@ -10,6 +10,9 @@ IMAGE_INSTALL += " \
     glibc-dbg \
     packagegroup-sdk-target \
     ethtool \
+    packagegroup-hostmobility-net-extended \
+    pm-utils \
+    systemd-analyze \
 "
 export IMAGE_DEVELOPNAME = "console-hostmobility-dev-image"
 
