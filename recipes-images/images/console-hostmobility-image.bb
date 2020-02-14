@@ -2,7 +2,7 @@ SUMMARY = "Image booting to a console"
 
 LICENSE = "MIT"
 
-PV = "V2.8.4"
+PV = "1"
 
 IMAGE_PREPROCESS_COMMAND = "rootfs_update_timestamp ;"
 
@@ -24,10 +24,10 @@ IMAGE_INSTALL += " \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
-    packagegroup-hostmobility-docker \
     libgpiod \
     ntpdate \
     lrzsz \
+    lmsensors-sensors \
 "
 
 
