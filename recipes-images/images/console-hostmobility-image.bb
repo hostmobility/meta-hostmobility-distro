@@ -30,6 +30,10 @@ IMAGE_INSTALL_append_tegra3mainline += " \
     lmsensors-sensors \
 "
 
+IMAGE_INSTALL_append_mx6 += " \
+    libgpiod \
+    ntpdate \
+"
 
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
