@@ -21,6 +21,7 @@ IMAGE_INSTALL += " \
     udev-extra-rules \
     ${ROOTFS_PKGMANAGE_PKGS} \
     minicom \
+    ${CORE_IMAGE_EXTRA_INSTALL} \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
@@ -42,5 +43,5 @@ IMAGE_LOGIN_MANAGER = "busybox shadow"
 
 export IMAGE_BASENAME = "console-hostmobility-image"
 
-inherit image
+inherit core-image
 
