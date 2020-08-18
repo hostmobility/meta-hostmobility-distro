@@ -21,6 +21,7 @@ IMAGE_INSTALL += " \
     udev-extra-rules \
     ${ROOTFS_PKGMANAGE_PKGS} \
     minicom \
+    uart-test \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
