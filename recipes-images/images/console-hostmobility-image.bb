@@ -34,6 +34,11 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 IMAGE_INSTALL_append_mx6 += " \
     libgpiod \
     ntpdate \
+    cryptodev-module \
+    cryptodev-tests \
+    rng-tools \
+    uart-test \
+    dfu-util \
 "
 
 IMAGE_DEV_MANAGER   = "udev"
