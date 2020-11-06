@@ -20,21 +20,15 @@ BBLAYERS ?= " \
   ${TOPDIR}/../layers/meta-openembedded/meta-multimedia \
   \
   ${TOPDIR}/../layers/meta-openembedded/meta-python \
-  ${TOPDIR}/../layers/meta-lxde \
-  ${TOPDIR}/../layers/meta-browser \
-  ${TOPDIR}/../layers/meta-qt4 \
   ${TOPDIR}/../layers/meta-qt5 \
-  ${TOPDIR}/../layers/meta-jetson-tk1 \
   ${TOPDIR}/../layers/meta-freescale-distro \
   \
   ${TOPDIR}/../layers/meta-toradex-bsp-common \
   ${TOPDIR}/../layers/meta-toradex-tegra \
   ${TOPDIR}/../layers/meta-toradex-nxp \
-  ${TOPDIR}/../layers/meta-toradex-demos \
   \
   ${TOPDIR}/../layers/openembedded-core/meta \
   \
   ${TOPDIR}/../layers/meta-hostmobility-bsp \
   ${TOPDIR}/../layers/meta-hostmobility-distro \
-  ${TOPDIR}/../layers/meta-virtualization \
 "
