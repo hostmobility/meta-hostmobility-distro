@@ -256,7 +256,7 @@ DISTRO_FEATURES_remove = "3g"
 # This will install tdx-nv-binaries which will bring a dependency on xorg-abi
 # which is only provided when xorg is deployed, which is not the case for a
 # console only image
-DISTRO_FEATURES_remove = "x11"
+DISTRO_FEATURES_append = "x11"
 
 DISTRO_FEATURES_append = " systemd"
 DISTRO_FEATURES_append = " virtualization"
