@@ -3,5 +3,10 @@ Host Mobility targets are:
     2. mobility-image *Graphic based console window and audio*
     3. mobility-image-xfce *Desktop example version*
     4. console-hostmobility-dev-image *Development no graphic*
+Machine compatible
+    mx4-t30 (also include support for mx4-t30fr) *console only*
+    mx4-v61 *console only*
+    mx4-c61 *console only*
+    mx5-pt *include graphic*
 
 You can also run generated qemu images with a command like 'runqemu qemux86'
