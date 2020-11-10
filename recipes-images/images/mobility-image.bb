@@ -2,16 +2,6 @@ DESCRIPTION = "A console-only image that includes gstreamer packages, \
 Freescale's multimedia packages (VPU and GPU) when available, and \
 test and benchmark applications."
 
-IMAGE_FEATURES += " \
-    debug-tweaks \
-    tools-debug \
-    tools-profile \
-    splash \
-    ssh-server-openssh \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '', \
-       bb.utils.contains('DISTRO_FEATURES',     'x11', 'x11-base', \
-                                                       '', d), d)} \
-"
 
 LICENSE = "MIT"
 
