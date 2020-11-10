@@ -32,7 +32,7 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
-    libgpiod \
+    packagegroup-hostmobility-base \
     ntpdate \
     rng-tools \
     uart-test \
