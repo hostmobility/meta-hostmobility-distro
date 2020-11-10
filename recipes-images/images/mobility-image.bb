@@ -26,7 +26,7 @@ X11TOOLS = "\
 
 IMAGE_INSTALL_append += " \
     packagegroup-core-full-cmdline \
-    packagegroup-hostmobility-base \\
+    packagegroup-hostmobility-base \
     packagegroup-hostmobility-net-extended \
     packagegroup-fsl-gstreamer1.0 \
     packagegroup-fsl-tools-gpu \
