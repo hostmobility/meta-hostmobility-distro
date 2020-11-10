@@ -1,6 +1,5 @@
 DESCRIPTION = "Automatic configuration for ethX interfaces on MX-4 Board"
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=4d92cd373abda3937c2bc47fbc49d690"
+LICENSE = "CLOSED"
 
 inherit systemd
 
