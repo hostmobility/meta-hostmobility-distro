@@ -3,8 +3,6 @@ DESCRIPTION = "Package group bringing in packages that are needed when working w
 
 inherit packagegroup
 
-PACKAGE_ARCH = "${MACHINE_ARCH}"
-
 RDEPENDS_${PN} = " \
     libgpiod \
     libgpiod-tools \
