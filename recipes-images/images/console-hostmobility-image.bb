@@ -11,8 +11,13 @@ IMAGE_LINGUAS = "en-us"
 DISTRO_UPDATE_ALTERNATIVES ??= ""
 ROOTFS_PKGMANAGE_PKGS ?= '${@oe.utils.conditional("ONLINE_PACKAGE_MANAGEMENT", "none", "", "${ROOTFS_PKGMANAGE} ${DISTRO_UPDATE_ALTERNATIVES}", d)}'
 
+IMAGE_FEATURES_mx6 += " \
+    debug-tweaks \
+    splash \
+    ssh-server-openssh \
+"
+
 IMAGE_INSTALL += " \
-    packagegroup-basic \
     packagegroup-base-extended \
     packagegroup-hostmobility-can \
     packagegroup-hostmobility-net-minimal \
@@ -33,6 +38,7 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 
 IMAGE_INSTALL_append_mx6 += " \
     packagegroup-hostmobility-base \
+    packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
     uart-test \
