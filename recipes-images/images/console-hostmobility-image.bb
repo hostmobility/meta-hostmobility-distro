@@ -19,6 +19,7 @@ IMAGE_FEATURES_mx6 += " \
 
 IMAGE_INSTALL += " \
     packagegroup-base-extended \
+    packagegroup-hostmobility-base \
     packagegroup-hostmobility-can \
     packagegroup-hostmobility-net-minimal \
     packagegroup-hostmobility-gps \
@@ -37,7 +38,6 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
-    packagegroup-hostmobility-base \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
