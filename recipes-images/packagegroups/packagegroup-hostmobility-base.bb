@@ -13,7 +13,6 @@ RDEPENDS_${PN} = " \
     python3-pyserial \
     opkg \
     opkg-utils \
-    openssl-engines \
     htop \
     make \
 "

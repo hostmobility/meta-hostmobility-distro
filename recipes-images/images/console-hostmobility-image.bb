@@ -44,6 +44,7 @@ IMAGE_INSTALL_append_mx6 += " \
     rng-tools \
     uart-test \
     dfu-util \
+    openssl-engines \
 "
 #mx6 machine override using ssh-server-openssh which is not compatible with this packagegroup
 IMAGE_INSTALL_remove_mx6 += "packagegroup-basic"
