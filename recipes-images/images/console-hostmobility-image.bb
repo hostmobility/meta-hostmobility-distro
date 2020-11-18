@@ -39,6 +39,7 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
+    packagegroup-base \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
