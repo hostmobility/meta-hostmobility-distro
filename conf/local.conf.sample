@@ -6,11 +6,6 @@ DISTRO_FEATURES_remove = "wayland"
 # Otherwise ofono is installed and we do not want that
 DISTRO_FEATURES_remove = "3g"
 
-# This will install tdx-nv-binaries which will bring a dependency on xorg-abi
-# which is only provided when xorg is deployed, which is not the case for a
-# console only image
-DISTRO_FEATURES_remove = "x11"
-
 # This file is your local configuration file and is where all local user settings
 # are placed. The comments in this file give some guide to the options a new user
 # to the system might want to change but pretty much any configuration option can
@@ -249,9 +244,6 @@ CONF_VERSION = "1"
 # Delete the the source/object/binary files once a package is built to preserve disk space
 INHERIT += "rm_work"
 
-# Add Toradex source mirror
-INHERIT += "toradex-mirrors"
-
 # Use this distro (filename from meta-angstrom/conf/distro/xx.conf)
 DISTRO = "angstrom"
 
@@ -264,7 +256,7 @@ DISTRO_FEATURES_remove = "3g"
 # This will install tdx-nv-binaries which will bring a dependency on xorg-abi
 # which is only provided when xorg is deployed, which is not the case for a
 # console only image
-DISTRO_FEATURES_remove = "x11"
+DISTRO_FEATURES_append = "x11"
 
 DISTRO_FEATURES_append = " systemd"
 DISTRO_FEATURES_append = " virtualization"

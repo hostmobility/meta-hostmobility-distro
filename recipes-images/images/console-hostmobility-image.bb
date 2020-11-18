@@ -11,9 +11,16 @@ IMAGE_LINGUAS = "en-us"
 DISTRO_UPDATE_ALTERNATIVES ??= ""
 ROOTFS_PKGMANAGE_PKGS ?= '${@oe.utils.conditional("ONLINE_PACKAGE_MANAGEMENT", "none", "", "${ROOTFS_PKGMANAGE} ${DISTRO_UPDATE_ALTERNATIVES}", d)}'
 
+IMAGE_FEATURES_mx6 += " \
+    debug-tweaks \
+    splash \
+    ssh-server-openssh \
+"
+
 IMAGE_INSTALL += " \
     packagegroup-basic \
     packagegroup-base-extended \
+    packagegroup-hostmobility-base \
     packagegroup-hostmobility-can \
     packagegroup-hostmobility-net-minimal \
     packagegroup-hostmobility-gps \
@@ -32,12 +39,15 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
-    libgpiod \
+    packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
     uart-test \
     dfu-util \
+    openssl-engines \
 "
+#mx6 machine override using ssh-server-openssh which is not compatible with this packagegroup
+IMAGE_INSTALL_remove_mx6 += "packagegroup-basic"
 
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
