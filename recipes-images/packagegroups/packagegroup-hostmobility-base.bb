@@ -9,8 +9,6 @@ RDEPENDS_${PN} = " \
     libssl \
     lrzsz \
     lmsensors-sensors \
-    python3-pip \
-    python3-pyserial \
     opkg \
     opkg-utils \
     htop \
