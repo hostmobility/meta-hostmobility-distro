@@ -23,6 +23,11 @@ IMAGE_INSTALL += " \
     python3-pip \
     python3-pyserial \
 "
+
+IMAGE_INSTALL_mx6 += " \
+    packagegroup-core-full-cmdline \
+"
+
 export IMAGE_DEVELOPNAME = "console-hostmobility-dev-image"
 
 
