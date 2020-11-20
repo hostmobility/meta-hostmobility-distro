@@ -38,6 +38,7 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
+    packagegroup-core-full-cmdline-utils \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
