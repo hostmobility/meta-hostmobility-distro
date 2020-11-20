@@ -28,6 +28,7 @@ IMAGE_INSTALL += " \
     ${ROOTFS_PKGMANAGE_PKGS} \
     minicom \
     ${CORE_IMAGE_EXTRA_INSTALL} \
+    uart-test \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
@@ -42,7 +43,6 @@ IMAGE_INSTALL_append_mx6 += " \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
-    uart-test \
     dfu-util \
 "
 
