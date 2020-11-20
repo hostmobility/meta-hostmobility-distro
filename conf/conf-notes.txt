@@ -3,6 +3,7 @@ Host Mobility targets are:
     2. mobility-image *Graphic based console window and audio*
     3. mobility-image-xfce *Desktop example version*
     4. console-hostmobility-dev-image *Development no graphic*
+    5. mobility-image-develompent *Development with graphic support"
 Machine compatible
     mx4-t30 (also include support for mx4-t30fr) *console only*
     mx4-v61 *console only*
