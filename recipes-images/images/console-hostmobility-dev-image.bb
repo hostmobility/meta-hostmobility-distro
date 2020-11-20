@@ -13,6 +13,13 @@ IMAGE_INSTALL += " \
     packagegroup-hostmobility-net-extended \
     pm-utils \
     systemd-analyze \
+    hdparm \
+    iperf \
+    i2c-tools \
+    memtester \
+    stress \
+    lmbench \
+    nbench-byte \
     python3-pip \
     python3-pyserial \
 "
