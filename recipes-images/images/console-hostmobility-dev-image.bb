@@ -20,6 +20,8 @@ IMAGE_INSTALL += " \
     stress \
     lmbench \
     nbench-byte \
+    python3-pip \
+    python3-pyserial \
 "
 export IMAGE_DEVELOPNAME = "console-hostmobility-dev-image"
 

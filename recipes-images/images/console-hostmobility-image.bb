@@ -18,6 +18,7 @@ IMAGE_FEATURES_mx6 += " \
 "
 
 IMAGE_INSTALL += " \
+    packagegroup-basic \
     packagegroup-base-extended \
     packagegroup-hostmobility-base \
     packagegroup-hostmobility-can \
@@ -40,11 +41,15 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 
 IMAGE_INSTALL_append_mx6 += " \
     packagegroup-core-full-cmdline-utils \
+    packagegroup-base \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
     dfu-util \
+    openssl-engines \
 "
+#mx6 machine override using ssh-server-openssh which is not compatible with this packagegroup
+IMAGE_INSTALL_remove_mx6 += "packagegroup-basic"
 
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
