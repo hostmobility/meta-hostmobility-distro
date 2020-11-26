@@ -31,14 +31,14 @@ IMAGE_INSTALL += " \
     uart-test \
 "
 
-IMAGE_INSTALL_append_tegra3mainline += " \
+IMAGE_INSTALL_tegra3mainline += " \
     libgpiod \
     ntpdate \
     lrzsz \
     lmsensors-sensors \
 "
 
-IMAGE_INSTALL_append_mx6 += " \
+IMAGE_INSTALL_mx6 += " \
     packagegroup-core-full-cmdline-utils \
     packagegroup-base \
     packagegroup-imx-tools-audio \

@@ -7,7 +7,7 @@ LICENSE = "MIT"
 
 require console-hostmobility-image.bb
 
-IMAGE_FEATURES += " \
+IMAGE_FEATURES_append += " \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '', \
        bb.utils.contains('DISTRO_FEATURES',     'x11', 'x11-base', \
                                                        '', d), d)} \
@@ -20,7 +20,7 @@ X11TOOLS = "\
     xprop \
 "
 
-IMAGE_INSTALL_append += " \
+IMAGE_INSTALL += " \
     packagegroup-hostmobility-net-extended \
     packagegroup-fsl-gstreamer1.0 \
     packagegroup-fsl-tools-gpu \
