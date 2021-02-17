@@ -16,6 +16,9 @@ IMAGE_FEATURES_mx6 += " \
     ssh-server-openssh \
 "
 
+#For packagegroup-basic use this instead of sshdropbear
+TASK_BASIC_SSHDAEMON = "openssh-sshd openssh-sftp openssh-sftp-server"
+
 IMAGE_INSTALL += " \
     packagegroup-basic \
     packagegroup-base-extended \
