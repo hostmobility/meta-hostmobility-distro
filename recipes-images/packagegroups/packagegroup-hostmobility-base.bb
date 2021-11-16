@@ -13,5 +13,7 @@ RDEPENDS_${PN} = " \
     opkg-utils \
     htop \
     make \
+    usb-rndis-systemd \
+
 "
 
