@@ -5,6 +5,7 @@ inherit packagegroup
 
 RDEPENDS_${PN} = " \
     libgpiod \
+    libgpiod-tools \
     minicom \
     libssl \
     lrzsz \
