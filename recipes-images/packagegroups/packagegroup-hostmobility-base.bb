@@ -15,6 +15,5 @@ RDEPENDS_${PN} = " \
     htop \
     make \
     usb-rndis-systemd \
-
 "
 
