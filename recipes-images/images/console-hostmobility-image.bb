@@ -32,6 +32,8 @@ IMAGE_INSTALL += " \
     minicom \
     ${CORE_IMAGE_EXTRA_INSTALL} \
     uart-test \
+    packagegroup-core-full-cmdline-utils \
+    fs-init \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
@@ -42,13 +44,13 @@ IMAGE_INSTALL_append_tegra3mainline += " \
 "
 
 IMAGE_INSTALL_append_mx6 += " \
-    packagegroup-core-full-cmdline-utils \
     packagegroup-base \
     packagegroup-imx-tools-audio \
     ntpdate \
     rng-tools \
     dfu-util \
     openssl-engines \
+    u-boot-hostmobility-flash-mx5 \
 "
 #mx6 machine override using ssh-server-openssh which is not compatible with this packagegroup
 IMAGE_INSTALL_remove_mx6 += "packagegroup-basic"
