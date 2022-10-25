@@ -20,4 +20,12 @@ do_install_append() {
     if ${@bb.utils.contains('MACHINE_FEATURES', 'usbgadget', 'true', 'false', d)}; then
 		install -D -m0644 ${WORKDIR}/usb1.network ${D}${systemd_unitdir}/network/10-usb.network
     fi
+    #Example files for can 0 to 6 (does not do anything but if you remove # for BitRate=500K and RestartSec=100ms it will start can controller(s) on next reboot or use 'networkctl reload' on interface named can0 to 6). 
+    install -D -m0644 ${WORKDIR}/can0.network ${D}${systemd_unitdir}/network/80-can0.network
+    install -D -m0644 ${WORKDIR}/can1.network ${D}${systemd_unitdir}/network/80-can1.network
+    install -D -m0644 ${WORKDIR}/can2.network ${D}${systemd_unitdir}/network/80-can2.network
+    install -D -m0644 ${WORKDIR}/can3.network ${D}${systemd_unitdir}/network/80-can3.network
+    install -D -m0644 ${WORKDIR}/can4.network ${D}${systemd_unitdir}/network/80-can4.network
+    install -D -m0644 ${WORKDIR}/can5.network ${D}${systemd_unitdir}/network/80-can5.network
+    install -D -m0644 ${WORKDIR}/can6.network ${D}${systemd_unitdir}/network/80-can6.network
 }
