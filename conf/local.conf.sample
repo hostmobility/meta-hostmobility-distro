@@ -1,4 +1,5 @@
 WARN_QA_remove = "host-user-contaminated"
+DISTRO_CODENAME = "hardknott"
 
 # meta-freescale otherwise defaults to wayland
 DISTRO_FEATURES_remove = "wayland"
