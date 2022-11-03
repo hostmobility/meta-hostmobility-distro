@@ -1,0 +1,11 @@
+[Unit]
+Description=start resize script to increase rootfs to its partition full size
+Requires=autostart.service
+After=autostart.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c '/usr/sbin/resizefs.sh mmcblk0 4'
+
+[Install]
+WantedBy=multi-user.target
