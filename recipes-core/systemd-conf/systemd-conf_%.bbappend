@@ -6,6 +6,13 @@ SRC_URI += "\
   file://eth2.network \
   file://usb1.network \
   file://wlan0.network \
+  file://can0.network \
+  file://can1.network \
+  file://can2.network \
+  file://can3.network \
+  file://can4.network \
+  file://can5.network \
+  file://can6.network \
   "
 
 do_install_append() {
