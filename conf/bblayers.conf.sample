@@ -26,6 +26,7 @@ BBLAYERS ?= " \
   \
   ${TOPDIR}/../layers/meta-toradex-bsp-common \
   ${TOPDIR}/../layers/meta-toradex-tegra \
+  ${TOPDIR}/../layers/meta-toradex-demos \
   ${TOPDIR}/../layers/meta-toradex-nxp \
   \
   ${TOPDIR}/../layers/openembedded-core/meta \
@@ -33,4 +34,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../layers/meta-hostmobility-bsp \
   ${TOPDIR}/../layers/meta-hostmobility-distro \
   ${TOPDIR}/../layers/meta-virtualization \
+  ${TOPDIR}/../layers/meta-lxde \
+  ${TOPDIR}/../layers/meta-browser \
+  ${TOPDIR}/../layers/meta-qt4 \
 "
