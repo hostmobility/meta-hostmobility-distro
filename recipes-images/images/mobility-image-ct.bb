@@ -225,6 +225,8 @@ IMAGE_INSTALL += " \
     make \
     fbtest \
     packagegroup-hostmobility-base \
+    backports \
+    kernel-module-pic \
 "
 
 IMAGE_DEV_MANAGER   = "udev"
