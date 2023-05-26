@@ -34,6 +34,7 @@ IMAGE_INSTALL += " \
     uart-test \
     packagegroup-core-full-cmdline-utils \
     fs-init \
+    stress \
 "
 
 IMAGE_INSTALL_append_tegra3mainline += " \
